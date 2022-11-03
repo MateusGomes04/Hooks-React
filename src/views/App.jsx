@@ -13,14 +13,14 @@ const App = props => {
 
     return (
         <Store>
-        <DataContext.Provider value={{ state, setState }}>
-            <div className="App">
-                <Router>
-                    <Menu />
-                    <Content />
-                </Router>
-            </div>
-        </DataContext.Provider>
+            <DataContext.Provider value={{ state, setState }}>
+                <div className="App">
+                    <Router>
+                        <Menu />
+                        <Content />
+                    </Router>
+                </div>
+            </DataContext.Provider>
         </Store>
 
     )
