@@ -20,9 +20,9 @@ const UseEffect = (props) => {
 
     const [status, setStatus] = useState("ímpar")
 
-    useEffect(function() {
+    useEffect(function () {
         setStatus(number % 2 === 0 ? "Par" : "Ímpar")
-}, [number])
+    }, [number])
     return (
         <div className="UseEffect">
             <PageTitle
